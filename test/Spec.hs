@@ -1,4 +1,8 @@
 main :: IO ()
 main = do
-    runTestTT $ "Test1" ~: 1 + 1 ~?= 2
+    runTestTT $ TestList
+        [ -- テストケース1
+        , -- テストケース2
+        , -- テストケース3
+        ]
     return ()
